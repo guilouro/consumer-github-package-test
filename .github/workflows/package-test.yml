@@ -1,0 +1,11 @@
+on: push
+name: Consumer Hello Github Packages
+jobs:
+  test:
+    name: Test running correctly
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install dependencies
+        run: npm install
+      -name: Running test
+        run: npm test
