@@ -12,7 +12,7 @@ jobs:
           node-version: 10.x
 
       - name: Install dependencies
-        run: npm install --registry https://npm.pkg.github.com
+        run: npm install
         
       - name: Running test using @guilouro/hello-github-packages
         run: npm test
