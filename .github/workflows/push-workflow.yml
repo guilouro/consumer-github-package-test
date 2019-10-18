@@ -9,4 +9,3 @@ jobs:
         run: npm install
       - name: Running test
         run: jest test.js
-        uses: ./
