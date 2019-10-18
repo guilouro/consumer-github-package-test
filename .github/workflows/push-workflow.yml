@@ -13,8 +13,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
       - name: Running test using @guilouro/hello-github-packages
         run: npm test
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
