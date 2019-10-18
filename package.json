@@ -1,7 +1,7 @@
 {
   "name": "consumer",
   "version": "1.0.0",
-  "description": "",
+  "description": "@guilouro/hello-github-packages consumer test",
   "main": "index.js",
   "scripts": {
     "test": "jest test.js"
@@ -12,5 +12,5 @@
     "lodash": "^4.17.15"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

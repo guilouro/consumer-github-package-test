@@ -8,4 +8,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Running test
-        run: npm test
+        run: jest test.js
