@@ -5,7 +5,15 @@ jobs:
     name: Test running correctly
     runs-on: ubuntu-latest
     steps:
+     - uses: actions/checkout@master
+    
+    - name: Set Node.js 10.x
+      uses: actions/setup-node@master
+      with:
+        version: 10.x
+
       - name: Install dependencies
         run: npm install
+        
       - name: Running test
         run: jest test.js
