@@ -13,8 +13,10 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@your-github-username'
 
-      - name: Install dependencies
+      - name: Set Registry
         run: echo "@guilouro:registry=https://npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+
+      - name: Install dependencies
         run: npm install
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
